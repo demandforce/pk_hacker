@@ -16,10 +16,10 @@ var LOG_DIR = process.env.DFS_LOG_DIR || "log";
 var REQUEST_LOG = "request.log";
 
 /**** Express middleware  ****/
-app.use(bodyParser.json({ limit: '64mb' }));
-app.use(bodyParser.text({ limit: '64mb', type: 'application/xml' }));
+//app.use(bodyParser.json({ limit: '64mb' }));
+//app.use(bodyParser.text({ limit: '64mb', type: 'application/xml' }));
 
-app.use(express.static(__dirname + '/static'));
+//app.use(express.static(__dirname + '/static'));
 
 
 //default unhandled exception handler

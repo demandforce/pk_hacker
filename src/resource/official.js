@@ -26,7 +26,8 @@ function handleOfficial(req, res, next) {
 };
 
 function computeInput(params) {
-  return SEED_TOKEN.split('').sort().join('') + params.timestamp.split('').sort().join('') + params.nonce.split('').sort().join('');
+  //return SEED_TOKEN.split('').sort().join('') + params.timestamp.split('').sort().join('') + params.nonce.split('').sort().join('');
+  return [SEED_TOKEN, params.timestamp, params.nonce].sort().join('');
 }
 
 
